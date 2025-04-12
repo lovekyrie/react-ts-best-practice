@@ -1,6 +1,7 @@
 import Button from './demo/button'
 import { Heading, OtherHeading } from './demo/compDiff'
 import MyInput from './demo/formEvent'
+import Container from './demo/spreadProps'
 
 function App() {
   function handleClick() {
@@ -9,10 +10,13 @@ function App() {
   }
   return (
     <>
-      <Heading name="李世奇" color="yellow" />
+      <Heading name="landon" color="yellow" />
       <OtherHeading name="lovekyrie" color="blue" />
       <Button onClick={handleClick}>这是我建的一个按钮</Button>
-      <MyInput />
+      <div style={{ margin: '10px 0' }}>
+        <MyInput />
+      </div>
+      <Container text="天空会的像哭过的按钮" color="green" height={40} />
     </>
   )
 }

@@ -13,7 +13,7 @@ interface OtherProps {
 
 // 函数声明式写法
 function Heading({ name, color }: Props): React.ReactNode {
-  return <h1 style={{ color }}>My {name}Website Heading, it's Color is {color}</h1>
+  return <h1 style={{ color }}>My {name} Website Heading, it's Color is {color}</h1>
 }
 
 // 函数扩展式写法
